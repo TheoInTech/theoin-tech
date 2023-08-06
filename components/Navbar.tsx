@@ -16,9 +16,9 @@ const navItems = {
   "/blog": {
     name: "blog",
   },
-  "/say-hi": {
-    name: "say hi 👋",
-  },
+  //   "/say-hi": {
+  //     name: "say hi 👋",
+  //   },
 };
 
 export default function Navbar() {
