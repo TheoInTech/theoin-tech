@@ -11,7 +11,7 @@ import metacrafters from "public/images/with-metacrafters-founders.png";
 import matching from "public/images/startup-matching.png";
 import podcast from "public/images/podcast.png";
 import web3bootcamp from "public/images/web3-bootcamp.jpg";
-import top6startups from "public/images/top-6-startups.jpg";
+import top6startups from "public/images/top-6-startups.png";
 
 import SupabaseIcon from "public/images/tech/supabase.svg";
 
