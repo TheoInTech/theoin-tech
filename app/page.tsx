@@ -7,9 +7,9 @@ import ArrowUprightIcon from "public/icons/arrow-upright.svg";
 import Youtube from "public/images/youtube.svg";
 import Tiktok from "public/images/tiktok.svg";
 import teaching from "public/images/teaching.jpg";
-import metacrafters from "public/images/with-metacrafters-founders.jpg";
-import matching from "public/images/startup-matching.jpg";
-import podcast from "public/images/podcast.jpg";
+import metacrafters from "public/images/with-metacrafters-founders.png";
+import matching from "public/images/startup-matching.png";
+import podcast from "public/images/podcast.png";
 import web3bootcamp from "public/images/web3-bootcamp.jpg";
 import top6startups from "public/images/top-6-startups.jpg";
 
