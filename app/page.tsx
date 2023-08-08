@@ -13,8 +13,6 @@ import podcast from "public/images/podcast.png";
 import web3bootcamp from "public/images/web3-bootcamp.jpg";
 import top6startups from "public/images/top-6-startups.png";
 
-import SupabaseIcon from "public/images/tech/supabase.svg";
-
 export default function Home() {
   return (
     <section className="z-20">
