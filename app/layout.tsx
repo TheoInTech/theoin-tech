@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { twMerge } from "tailwind-merge";
 import { Navbar } from "@/components";
-import NoiseAndTexture from "public/images/NoiseAndTexture.svg";
 
 const jakarta = localFont({
   src: [

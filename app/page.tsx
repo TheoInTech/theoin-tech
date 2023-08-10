@@ -1,6 +1,4 @@
-"use client";
-
-import { Badge, Card, ChannelLink } from "@/components";
+import { Card, ChannelLink } from "@/components";
 import Link from "next/link";
 import Image from "next/image";
 import ArrowUprightIcon from "public/icons/arrow-upright.svg";
@@ -16,7 +14,7 @@ import top6startups from "public/images/top-6-startups.png";
 export default function Home() {
   return (
     <section className="z-20">
-      <h1 className="font-bold text-xl md:text-4xl mb-8 tracking-tighter">
+      <h1 className="mb-8 text-xl font-bold tracking-tighter md:text-4xl">
         hi, {`i'm theo - the indie hacker`} 🕵️💻
       </h1>
 
@@ -32,7 +30,7 @@ export default function Home() {
           href="https://thehowdystudios.com"
           rel="noopener noreferrer"
           target="_blank"
-          className="text-blue-green font-medium hover:underline hover:brightness-105"
+          className="font-medium text-blue-green hover:underline hover:brightness-105"
         >
           the howdy studios
         </Link>
@@ -42,7 +40,7 @@ export default function Home() {
           (see my works{" "}
           <Link
             href="/works"
-            className="text-blue-green font-medium hover:underline hover:brightness-105"
+            className="font-medium text-blue-green hover:underline hover:brightness-105"
           >
             here
           </Link>
@@ -55,7 +53,7 @@ export default function Home() {
         having been in the startup scene, i&apos;ve met and learned from the
         best people in the industry.
       </p>
-      <div className="columns-2 sm:columns-3 gap-4 my-8">
+      <div className="gap-4 my-8 columns-2 sm:columns-3">
         <div className="relative h-40 mb-4">
           <Image
             alt="me introducing ethereum to participants at a web3 hackathon in the philippines"
@@ -63,17 +61,17 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover hover:scale-105 hover:z-30 duration-300"
+            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
           />
         </div>
-        <div className="relative h-80 mb-4 sm:mb-0">
+        <div className="relative mb-4 h-80 sm:mb-0">
           <Image
             alt="chosen as one of the top 6 startups at the aibc conference organized by sigma."
             src={top6startups}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover object-left hover:scale-105 hover:z-30 duration-300"
+            className="object-cover object-left duration-300 rounded-lg hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
@@ -83,7 +81,7 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover object-top hover:scale-105 hover:z-30 duration-300"
+            className="object-cover object-top duration-300 rounded-lg hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
@@ -93,7 +91,7 @@ export default function Home() {
             fill
             sizes="(min-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover hover:scale-105 hover:z-30 duration-300"
+            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-40 mb-4">
@@ -103,7 +101,7 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover hover:scale-105 hover:z-30 duration-300"
+            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-80">
@@ -113,7 +111,7 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="rounded-lg object-cover hover:scale-105 hover:z-30 duration-300"
+            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
           />
         </div>
       </div>
@@ -122,10 +120,10 @@ export default function Home() {
       <p className="prose prose-neutral dark:prose-invert">
         {`i also found passion in creating dev content where i share my knowledge and experiences in the tech industry, for both in startup and enterprise scenes.`}
       </p>
-      <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
+      <div className="flex flex-col w-full my-8 space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
         <ChannelLink
           image={
-            <Youtube className="border border-neutral-200 dark:border-neutral-700 rounded-full h-full w-full" />
+            <Youtube className="w-full h-full border rounded-full border-neutral-200 dark:border-neutral-700" />
           }
           name="@_theindiehacker"
           // TODO: Get realtime subscriber count from YouTube API
@@ -134,7 +132,7 @@ export default function Home() {
         />
         <ChannelLink
           image={
-            <Tiktok className="border border-neutral-200 dark:border-neutral-700 rounded-full h-full w-full" />
+            <Tiktok className="w-full h-full border rounded-full border-neutral-200 dark:border-neutral-700" />
           }
           name="@_theindiehacker"
           // TODO: Get realtime subscriber count from Tiktok API
@@ -148,7 +146,7 @@ export default function Home() {
         in these channels, i publicly share my journey as an indie hacker and
         what i&apos;m learning along the way using the following tech stack:
       </p>
-      <Card className="my-8 flex flex-row w-full h-16">
+      <Card className="flex flex-row w-full h-16 my-8">
         <Image
           alt="aws,azure,supabase,ts,react,next,tailwind,java,spring,solidity,graphql,mysql,git,vercel"
           src="https://skillicons.dev/icons?i=aws,azure,supabase,ts,react,next,tailwind,java,spring,solidity,graphql,mysql,git,vercel&theme=dark"
@@ -162,7 +160,7 @@ export default function Home() {
         if you want to learn more, go ahead and follow my othersocials or maybe
         schedule a call with me 👌
       </p>
-      <ul className="flex my-8 gap-4">
+      <ul className="flex gap-4 my-8">
         <li>
           <Link
             className="flex items-center transition-all hover:bg-blue-green hover:bg-opacity-10"
