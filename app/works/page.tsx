@@ -7,7 +7,14 @@ export const metadata: Metadata = {
 };
 
 const WorksPage = () => {
-  return <Wip page="works" />;
+  return (
+    <section className="z-20 text-gray-400">
+      <h1 className="mb-8 text-xl font-bold md:text-3xl text-off-white">
+        here&apos;s what i built so far 🛠️
+      </h1>
+      <Wip page="works" />
+    </section>
+  );
 };
 
 export default WorksPage;

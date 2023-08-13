@@ -13,18 +13,21 @@ import top6startups from "public/images/top-6-startups.png";
 
 export default function Home() {
   return (
-    <section className="z-20">
-      <h1 className="mb-8 text-xl font-bold tracking-tighter md:text-4xl">
+    <section className="z-20 text-gray-400">
+      <h1 className="mb-8 text-xl font-bold md:text-3xl text-off-white">
         hi, {`i'm theo - the indie hacker`} 🕵️💻
       </h1>
 
       {/* Intro */}
-      <p className="prose prose-neutral dark:prose-invert">
-        {`i'm a fullstack developer and indie hacker currently
-        working full-time at accenture as an assoc manager developer whilst building side saas projects in emerging tech like ai and blockchain.`}
+      <p>
+        i&apos;m a <b className="text-gray-300">fullstack developer</b> and{" "}
+        <b className="text-gray-300">indie hacker</b> currently working
+        full-time at a fortune 100 software services and consulting company as
+        an assoc manager developer whilst building side saas projects in
+        emerging tech like ai and blockchain.
       </p>
       <br />
-      <p className="prose prose-neutral dark:prose-invert">
+      <p>
         i&apos;m slowly building my tech startup called{" "}
         <Link
           href="https://thehowdystudios.com"
@@ -49,11 +52,11 @@ export default function Home() {
         .
       </p>
       <br />
-      <p className="prose prose-neutral dark:prose-invert">
+      <p>
         having been in the startup scene, i&apos;ve met and learned from the
         best people in the industry.
       </p>
-      <div className="gap-4 my-8 columns-2 sm:columns-3">
+      <div className="gap-1 my-8 rounded-lg columns-2 sm:columns-3">
         <div className="relative h-40 mb-4">
           <Image
             alt="me introducing ethereum to participants at a web3 hackathon in the philippines"
@@ -61,7 +64,7 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
+            className="object-cover duration-300 hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative mb-4 h-80 sm:mb-0">
@@ -71,7 +74,7 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="object-cover object-left duration-300 rounded-lg hover:scale-105 hover:z-30"
+            className="object-cover object-left duration-300 hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-40 sm:h-80 sm:mb-4">
@@ -81,7 +84,7 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="object-cover object-top duration-300 rounded-lg hover:scale-105 hover:z-30"
+            className="object-cover object-top duration-300 hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
@@ -91,7 +94,7 @@ export default function Home() {
             fill
             sizes="(min-width: 768px) 213px, 33vw"
             priority
-            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
+            className="object-cover duration-300 hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-40 mb-4">
@@ -101,7 +104,7 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
+            className="object-cover duration-300 hover:scale-105 hover:z-30"
           />
         </div>
         <div className="relative h-80">
@@ -111,13 +114,13 @@ export default function Home() {
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
-            className="object-cover duration-300 rounded-lg hover:scale-105 hover:z-30"
+            className="object-cover duration-300 hover:scale-105 hover:z-30"
           />
         </div>
       </div>
 
       {/* Channels */}
-      <p className="prose prose-neutral dark:prose-invert">
+      <p>
         {`i also found passion in creating dev content where i share my knowledge and experiences in the tech industry, for both in startup and enterprise scenes.`}
       </p>
       <div className="flex flex-col w-full my-8 space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -142,7 +145,7 @@ export default function Home() {
       </div>
 
       {/* Tech stack */}
-      <p className="prose prose-neutral dark:prose-invert">
+      <p>
         in these channels, i publicly share my journey as an indie hacker and
         what i&apos;m learning along the way using the following tech stack:
       </p>
@@ -156,7 +159,7 @@ export default function Home() {
         />
       </Card>
 
-      <p className="prose prose-neutral dark:prose-invert">
+      <p>
         if you want to learn more, go ahead and follow my othersocials or maybe
         schedule a call with me 👌
       </p>

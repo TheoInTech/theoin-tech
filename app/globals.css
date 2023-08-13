@@ -11,6 +11,7 @@
 /* Enable smooth scrolling */
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /* Hide default scrollbar for Webkit browsers (Chrome, Safari) */

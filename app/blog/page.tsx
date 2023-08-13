@@ -7,7 +7,14 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = () => {
-  return <Wip page="blog" />;
+  return (
+    <section className="z-20 text-gray-400">
+      <h1 className="mb-8 text-xl font-bold md:text-3xl text-off-white">
+        love reading? go subscribe 📚
+      </h1>
+      <Wip page="blog" />
+    </section>
+  );
 };
 
 export default BlogPage;
