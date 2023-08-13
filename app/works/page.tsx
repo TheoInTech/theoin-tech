@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Works",
+  title: "works",
 };
 
 const WorksPage = () => {
-  return <Wip />;
+  return <Wip page="works" />;
 };
 
 export default WorksPage;

@@ -81,6 +81,10 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -95,7 +99,7 @@ export default function RootLayout({
     >
       <body className="antialiased ">
         <div className="fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-[url('/images/NoiseAndTexture.svg')] bg-cover bg-fixed bg-no-repeat"></div>
-        <main className="min-w-0 px-2 max-w-2xl mb-40 flex flex-col mx-4 mt-8 lg:mx-auto">
+        <main className="flex flex-col max-w-2xl min-w-0 px-2 mx-4 mt-8 mb-40 lg:mx-auto">
           <Navbar />
           {children}
           <Analytics />

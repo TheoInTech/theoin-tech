@@ -10,7 +10,7 @@ import WorksIcon from "public/icons/works.svg";
 import BlogIcon from "public/icons/blog.svg";
 
 const iconsClassName =
-  "w-12 h-12 p-2 fill-off-white hover:fill-white hover:bg-gray-50 hover:bg-opacity-10 rounded-md transition-all";
+  "w-12 h-12 p-2 stroke-white stroke-[1rem] text-white hover:bg-gray-50 hover:bg-opacity-10 rounded-md transition-all";
 
 const navItems = {
   "/": {
@@ -38,19 +38,13 @@ export default function Navbar() {
       <div className="lg:sticky lg:top-20">
         <LayoutGroup>
           <nav
-            className="relative flex items-center justify-center h-20 px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+            className="relative flex items-center justify-between h-20 px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
             id="nav"
           >
-            <Link
-              href={"/"}
-              className={"hidden md:block absolute left-0 top-0"}
-            >
-              <Logo className="w-20 h-20" />
+            <Link href={"/"}>
+              <Logo className="w-16 h-16 md:w-20 md:h-20" />
             </Link>
-            <div className="flex flex-row items-center justify-center gap-2 md:gap-4 ">
-              <Link href={"/"} className={"md:hidden"}>
-                <Logo className="w-16 h-16 md:w-20 md:h-20" />
-              </Link>
+            <div className="flex flex-row items-center justify-end gap-4 md:gap-8">
               {Object.entries(navItems).map(([path, { icon }]) => {
                 const isActive = path === pathname;
                 return (
@@ -59,10 +53,11 @@ export default function Navbar() {
                     href={path}
                     className={twMerge(
                       "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle",
-                      !isActive && "text-neutral-500"
+                      !isActive && "fill-none",
+                      isActive && "fill-current stroke-current"
                     )}
                   >
-                    <span className="relative px-2 py-1">
+                    <span className="relative">
                       {icon}
                       {path === pathname ? (
                         <motion.div
