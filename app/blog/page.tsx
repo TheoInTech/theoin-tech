@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const BlogPage = () => {
   return (
-    <section className="z-20 text-gray-400">
+    <section className="z-20 min-h-screen text-gray-400">
       <h1 className="mb-8 text-xl font-bold md:text-3xl text-off-white">
         love reading? go subscribe 📚
       </h1>

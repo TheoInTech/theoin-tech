@@ -13,7 +13,7 @@ import top6startups from "public/images/top-6-startups.png";
 
 export default function Home() {
   return (
-    <section className="z-20 text-gray-400">
+    <section className="z-20 min-h-screen text-gray-400">
       <h1 className="mb-8 text-xl font-bold md:text-3xl text-off-white">
         hi, {`i'm theo - the indie hacker`} 🕵️💻
       </h1>
@@ -56,66 +56,97 @@ export default function Home() {
         having been in the startup scene, i&apos;ve met and learned from the
         best people in the industry.
       </p>
-      <div className="gap-1 my-8 rounded-lg columns-2 sm:columns-3">
-        <div className="relative h-40 mb-4">
-          <Image
-            alt="me introducing ethereum to participants at a web3 hackathon in the philippines"
-            src={teaching}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="object-cover duration-300 hover:scale-105 hover:z-30"
-          />
+      <div className="gap-1 my-8 space-y-1 text-xs columns-2 sm:columns-3">
+        <div className="flex flex-col">
+          <div className="relative h-32 sm:h-40">
+            <Image
+              alt="me introducing ethereum to participants at a web3 hackathon in the philippines"
+              src={teaching}
+              fill
+              priority
+              className="object-cover h-full rounded"
+            />
+          </div>
+          <Card className="z-30 order-2 p-2 sm:order-1">
+            me introducing ethereum to participants at a web3 hackathon in the
+            philippines
+          </Card>
         </div>
-        <div className="relative mb-4 h-80 sm:mb-0">
-          <Image
-            alt="chosen as one of the top 6 startups at the aibc conference organized by sigma."
-            src={top6startups}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="object-cover object-left duration-300 hover:scale-105 hover:z-30"
-          />
+        <div className="flex flex-col">
+          <div className="relative h-40 sm:h-60">
+            <Image
+              alt="chosen as one of the top 6 startups at the aibc conference organized
+              by sigma."
+              src={top6startups}
+              fill
+              priority
+              className="object-cover h-full"
+            />
+          </div>
+          <Card className="z-30 order-2 p-2 sm:order-1">
+            chosen as one of the top 6 startups at the aibc conference organized
+            by sigma.
+          </Card>
         </div>
-        <div className="relative h-40 sm:h-80 sm:mb-4">
-          <Image
-            alt="got interviewed on national television together with metacrafters founders sheila marcelo and kevin yang."
-            src={metacrafters}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="object-cover object-top duration-300 hover:scale-105 hover:z-30"
-          />
+        <div className="flex flex-col">
+          <Card className="z-30 order-2 p-2 sm:order-1">
+            interviewed on television together with metacrafters founders sheila
+            marcelo and kevin yang.
+          </Card>
+          <div className="relative order-1 h-60 sm:order-2">
+            <Image
+              alt="interviewed on television together with metacrafters founders sheila marcelo and kevin yang."
+              src={metacrafters}
+              fill
+              priority
+              className="object-cover h-full rounded"
+            />
+          </div>
         </div>
-        <div className="relative h-40 mb-4 sm:mb-0">
-          <Image
-            alt="introduced my startup to investors during the philippine blockchain week 2022"
-            src={matching}
-            fill
-            sizes="(min-width: 768px) 213px, 33vw"
-            priority
-            className="object-cover duration-300 hover:scale-105 hover:z-30"
-          />
+        <div className="flex flex-col">
+          <Card className="z-30 order-2 p-2 sm:order-1">
+            introduced my startup to investors during the philippine blockchain
+            week 2022
+          </Card>
+          <div className="relative order-1 h-40 sm:order-2">
+            <Image
+              alt="introduced my startup to investors during the philippine blockchain week 2022"
+              src={matching}
+              fill
+              priority
+              className="object-cover h-full rounded"
+            />
+          </div>
         </div>
-        <div className="relative h-40 mb-4">
-          <Image
-            alt="invited as guest in a podcast to talk about my journey in the web3 startup industry."
-            src={podcast}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="object-cover duration-300 hover:scale-105 hover:z-30"
-          />
+        <div className="flex flex-col">
+          <div className="relative h-40">
+            <Image
+              alt="invited as guest in a podcast to talk about my journey in the web3 startup industry."
+              src={podcast}
+              fill
+              priority
+              className="object-cover h-full rounded"
+            />
+          </div>
+          <Card className="z-30 order-2 p-2 sm:order-1">
+            invited as guest in a podcast to talk about my journey in the web3
+            startup industry.
+          </Card>
         </div>
-        <div className="relative h-80">
-          <Image
-            alt="joined us a mentor in a web3 bootcamp in the philippines"
-            src={web3bootcamp}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="object-cover duration-300 hover:scale-105 hover:z-30"
-          />
+        <div className="flex flex-col">
+          <div className="relative h-60">
+            <Image
+              alt="joined as a mentor in a 3-day web3 bootcamp and hackathon in the philippines."
+              src={web3bootcamp}
+              fill
+              priority
+              className="object-cover h-full rounded"
+            />
+          </div>
+          <Card className="z-30 order-2 p-2 sm:order-1">
+            joined as a mentor in a 3-day web3 bootcamp and hackathon in the
+            philippines.
+          </Card>
         </div>
       </div>
 

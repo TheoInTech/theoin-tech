@@ -9,7 +9,8 @@
 }
 
 /* Enable smooth scrolling */
-html {
+html,
+body {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const WorksPage = () => {
   return (
-    <section className="z-20 text-gray-400">
+    <section className="z-20 min-h-screen text-gray-400">
       <h1 className="mb-8 text-xl font-bold md:text-3xl text-off-white">
         here&apos;s what i built so far 🛠️
       </h1>

@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Image from "next/image";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
-import { twMerge } from "tailwind-merge";
-import { Navbar } from "@/components";
+import { Footer, Navbar } from "@/components";
 
 const jakarta = localFont({
   src: [
@@ -93,16 +93,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={twMerge("text-off-white bg-dark", jakarta.variable)}
-    >
-      <body className="antialiased ">
-        <div className="fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-[url('/images/NoiseAndTexture.svg')] bg-cover bg-fixed bg-no-repeat"></div>
-        <main className="flex flex-col max-w-2xl min-w-0 px-2 mx-4 mt-8 mb-40 lg:mx-auto">
+    <html lang="en" className={jakarta.variable}>
+      <body className="antialiased bg-dark">
+        <div className="z-[-1] fixed top-0 h-full w-full">
+          <Image
+            src="/images/NoiseAndTexture.svg"
+            layout="fill"
+            alt="bg"
+            objectFit="cover"
+          />
+        </div>
+        <main className="flex flex-col max-w-2xl min-w-0 px-2 m-4 lg:mx-auto">
           <Navbar />
           {children}
           <Analytics />
+          <Footer />
         </main>
       </body>
     </html>
