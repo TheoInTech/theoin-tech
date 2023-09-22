@@ -1,15 +1,15 @@
 import { Card, ChannelLink } from "@/components";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import ArrowUprightIcon from "public/icons/arrow-upright.svg";
-import Youtube from "public/images/youtube.svg";
-import Tiktok from "public/images/tiktok.svg";
-import teaching from "public/images/teaching.jpg";
-import metacrafters from "public/images/with-metacrafters-founders.png";
-import matching from "public/images/startup-matching.png";
 import podcast from "public/images/podcast.png";
-import web3bootcamp from "public/images/web3-bootcamp.jpg";
+import matching from "public/images/startup-matching.png";
+import teaching from "public/images/teaching.jpg";
+import Tiktok from "public/images/tiktok.svg";
 import top6startups from "public/images/top-6-startups.png";
+import web3bootcamp from "public/images/web3-bootcamp.jpg";
+import metacrafters from "public/images/with-metacrafters-founders.png";
+import Youtube from "public/images/youtube.svg";
 
 export default function Home() {
   return (
@@ -20,10 +20,11 @@ export default function Home() {
 
       {/* Intro */}
       <p>
-        i&apos;m a <b className="text-gray-300">fullstack developer</b> and{" "}
-        <b className="text-gray-300">indie hacker</b> currently working
-        full-time at a fortune 100 software services and consulting company as
-        an assoc manager developer whilst building side saas projects in
+        i&apos;m a{" "}
+        <b className="text-gray-300">fullstack engineering manager</b> and{" "}
+        currently working full-time at a fortune 100 software services and
+        consulting company, leading multiple global teams whilst{" "}
+        <b className="text-gray-300">indie hacking</b> side saas projects in
         emerging tech like ai and blockchain.
       </p>
       <br />
