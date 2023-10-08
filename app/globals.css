@@ -47,3 +47,9 @@ body {
 body::-ms-overflow-style {
   display: none; /* Hide scrollbar */
 }
+
+@layer components {
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-[2px] border border-white/40 rounded-lg shadow-lg p-4;
+  }
+}

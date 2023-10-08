@@ -1,7 +1,8 @@
-import Navbar from "./Navbar";
-import ChannelLink from "./ChannelLink";
 import Badge from "./Badge";
+import { Button } from "./Button";
 import Card from "./Card";
+import ChannelLink from "./ChannelLink";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
-export { Navbar, ChannelLink, Badge, Card, Footer };
+export { Badge, Button, Card, ChannelLink, Footer, Navbar };
